@@ -7,9 +7,9 @@ defmodule Slugger.Mixfile do
      source_url: "https://github.com/h4cc/slugger",
      version: "0.1.0",
      elixir: "~> 1.0",
-     description: description,
-     package: package,
-     deps: deps]
+     description: description(),
+     package: package(),
+     deps: deps()]
   end
 
   defp description do
@@ -40,9 +40,9 @@ defmodule Slugger.Mixfile do
 
   defp deps() do
     [
-      {:earmark, "~> 0.1.17", only: :dev},
-      {:ex_doc, "~> 0.6", only: :dev},
-      {:benchfella, "~> 0.3.0", only: :dev},
+      {:earmark, "~> 1.1.1", only: :dev},
+      {:ex_doc, "~> 0.14.5", only: :dev},
+      {:benchfella, "~> 0.3.4", only: :dev},
     ]
   end
 end
